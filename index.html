@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarSpot - rekrutacja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="text-dark bg-whitebg">
+
+    <nav
+        class="nav-mobile fixed inset-0 bg-blue w-full h-full z-20 transform translate-x-full transition-transform duration-300 md:hidden">
+        <div class="flex flex-col justify-center items-center h-full">
+            <a href="#"
+                class="text-white text-2xl uppercase mb-6 hover:text-gray-300 transition-transform duration-300 transform hover:scale-105">Galeria
+                zdjęć</a>
+            <a href="#"
+                class="text-white text-2xl uppercase hover:text-gray-300 transition-transform duration-300 transform hover:scale-105">FaQ</a>
+        </div>
+    </nav>
+    <button class="bars-btn absolute right-8 top-5 z-30 md:hidden">
+        <img src="./img/bars.svg" class="w-12">
+    </button>
+
+    <nav class="nav-desktop hidden md:block py-6 px-3">
+        <div class="container flex justify-between items-center">
+            <img src="./img/logo.png" alt="logo firmy" class="h-8">
+            <div class="nav-items hidden md:flex items-center gap-6">
+                <a href="" class="hover:text-blue transition-colors duration-300">Galeria zdjęć</a>
+                <a href="" class="hover:text-blue transition-colors duration-300">FaQ</a>
+            </div>
+            <button
+                class="hidden md:block w-[158px] h-[47px] text-white bg-blue rounded-lg cursor-pointer hover:bg-darkblue transition-colors duration-300">Zadzwoń
+                do
+                nas</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container pt-24 md:pt-28 px-3 min-h-[825px]">
+            <div class="container-box">
+                <div class="content text-center sm:text-start">
+                    <h1 class="text-7xl font-bebas">Sprzedajemy samochody z europy</h1>
+                    <p class="mt-9 font-roboto">Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.</p>
+                </div>
+                <div class="buttons mt-9 flex justify-center sm:justify-start gap-6">
+                    <button
+                        class="w-[158px] h-[47px] text-white bg-blue rounded-lg cursor-pointer hover:bg-darkblue transition-colors duration-300">Zobacz
+                        zdjęcia</button>
+                    <button
+                        class="w-[158px] h-[47px] text-blue bg-transparent border border-blue rounded-lg cursor-pointer hover:bg-darkblue hover:border-darkblue hover:text-white transition-colors duration-300">
+                        Zadzwoń do nas</button>
+                </div>
+            </div>
+            <div class="img-box -mt-10">
+                <img src="/img/Element.png" alt="hero image" class="hidden sm:block absolute top-0 right-20 h-[600px] md:h-[669px] -z-10">
+                <img src="/img/Element2.png" alt="hero image" class="absolute sm:hidden top-0 right-0 -z-10">
+                <img src="/img/Element3.png" alt="hero image" class="absolute sm:hidden top-0 right-0 -z-10">
+                <img src="./img/hero.png" alt="samochody"
+                    class="absolute mt-20 sm:m-0 right-0 h-[200px] sm:h-[300px] md:h-[400px] z-10">
+                <img src="./img/shadow.png" alt="cień pod samochodami" class="absolute mt-20 sm:m-0 right-0 h-[200px] sm:h-[300px] md:h-[400px] opacity-90 -z-10">
+            </div>
+        </section>
+        <section class="mt-10 md:mt-20 px-3">
+            <div class="container text-center sm:text-start">
+                <p class="text-[18px] font-roboto text-blue">Prezentacja firmy</p>
+                <h2 class="mt-2 text-4xl font-bebas">Zobacz naszą Galerię zdjęć</h2>
+
+                <div class="buttons mt-9 flex justify-center sm:justify-start gap-9">
+                    <button
+                        class="text-[14px] hover:text-blue hover:underline hover:underline-offset-4 focus:text-blue focus:underline focus:underline-offset-4 focus:font-bold transition-colors duration-300">
+                        Samochody osobowe
+                    </button>
+                    <button
+                        class="text-[14px] hover:text-blue hover:underline hover:underline-offset-4 focus:text-blue focus:underline focus:underline-offset-4 focus:font-bold transition-colors duration-300">
+                        Samochody dostawcze
+                    </button>
+                </div>
+            </div>
+            <div class="gallery pt-20 pb-10">
+                <div><img src="./img/image2.png" alt="Samochód 2" class="w-[400px] lg:w-[500px] xl:w-[600px]"></div>
+                <div><img src="./img/image3.png" alt="Samochód 3" class="w-[400px] lg:w-[500px] xl:w-[600px]"></div>
+                <div><img src="./img/image1.png" alt="Samochód 1" class="w-[400px] lg:w-[500px] xl:w-[600px]"></div>
+            </div>
+        </section>
+
+        <section class="mt-24 py-24 px-6 lg:px-[176px] bg-dark">
+            <div class="flex flex-col sm:flex-row justify-center gap-20">
+                <div class=" space-y-7">
+                    <h4 class="font-bebas text-white text-2xl">Id nostrud enim esse consectetur in eu mollit fugiat
+                        aute. Velit nulla commodo.</h4>
+                    <p class="font-roboto text-white text-[14px]">Mauris varius ipsum mauris, rutrum lobortis magna
+                        efficitur a. Donec egestas, nisl vehicula feugiat
+                        ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]</p>
+                    <button class="flex items-center pb-1 font-roboto text-white text-[14px] border-b-2">Rozwiń<img
+                            src="./img/arrow.svg" alt="strzałka" class="ml-2 h-4"></button>
+                </div>
+                <div class="space-y-7">
+                    <h4 class="font-bebas text-white text-2xl">Id nostrud enim esse consectetur in eu mollit fugiat
+                        aute. Velit nulla commodo.</h4>
+                    <p class="font-roboto text-white text-[14px]">Mauris varius ipsum mauris, rutrum lobortis magna
+                        efficitur a. Donec egestas, nisl vehicula feugiat
+                        ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]</p>
+                    <button class="flex items-center pb-1 font-roboto text-white text-[14px] border-b-2">Rozwiń<img
+                            src="./img/arrow.svg" alt="strzałka" class="ml-2 h-4"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="px-8 lg:px-[176px] py-14 bg-dark">
+        <div class="flex text-center items-center justify-between">
+            <p class="text-white font-bold">Cars Spot</p>
+            <p class="text-white underline cursor-pointer">Polityka prywatności</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
